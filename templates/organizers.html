@@ -1,0 +1,40 @@
+{% extends "section-base.html" %}
+
+{% block section_content %}
+<div id="organizer-list">
+  {% for page in section.pages %}
+  <div class="organizer">
+    <div class="organizer-portrait">
+      
+      <img src="/portraits/{% if page.extra.portrait %}{{ page.extra.portrait }}{% else %}scream.jpg{% endif %}" />
+    </div>
+    <div class="organizer-details">
+      <p><b>{{ page.extra.name }}</b></p>
+      {% if page.extra.affiliation %}
+      <div class="organizer-affiliations">
+        {% set affils = page.extra.affiliation %}
+        {% if affils is string %}
+        {% set affils = [affils] %}
+        {% endif %}
+        {% for affil in affils %}
+        <p>{{ affil }}</p>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <p>
+        {% set emails = page.extra.email %}
+        {% if emails is string %}
+        {% set emails = [emails] %}
+        {% endif %}
+        {% for email in emails %}
+        <a href="mailto:{{ email }}">{{ email }}</a>
+        {% endfor %}
+      </p>
+      {% if page.extra.homepage %}
+      <a href="{{ page.extra.homepage }}">{{ page.extra.homepage }}</a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock section_content %}

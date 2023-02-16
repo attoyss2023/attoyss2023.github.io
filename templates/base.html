@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>AttoChem Young Scientist Symposium 2023{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>AttoChem Young Scientist Symposium 2023</h1>
+      <h2>Vienna, September 13th–15th</h2>
+
+      <menu>
+        <ul>
+          <li><a href="/" {% if current_path == "/" %}class="active"{% endif %}>
+              Home
+          </a></li>
+          <li><a href="/venue" {% if current_path is starting_with("/venue") %}class="active"{% endif %}>
+              Venue
+          </a></li>
+          <li><a href="/organizers" {% if current_path is starting_with("/organizers") %}class="active"{% endif %}>
+              Organizers
+          </a></li>
+        </ul>
+      </menu>
+    </header>
+    <section class="section">
+      <div class="container">
+        {% block content %} {% endblock %}
+      </div>
+    </section>
+    <footer>
+      <div>
+        Contact: <a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a>
+      </div>
+    </footer>
+  </body>
+</html>
