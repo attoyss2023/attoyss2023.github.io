@@ -5,3 +5,9 @@
   <img src="{{ light | safe }}" class="{{ class }}" />
 </picture>
 {% endmacro img_light_dark %}
+
+{% macro menu_button(name, url) %}
+<li><a href="{{ url }}" {% if current_path is starting_with(url) %}class="active"{% endif %}>
+    {{ name }}
+</a></li>
+{% endmacro menu_button %}

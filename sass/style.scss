@@ -72,6 +72,12 @@ header {
         h1, h2 {
             margin: 0;
         }
+        h1 {
+            color: $attochem-grey;
+        }
+        h2 {
+            color: $attochem-purple;
+        }
     }
 
     .header-logo {

@@ -22,15 +22,9 @@
             <li><a href="/" {% if current_path == "/" %}class="active"{% endif %}>
                 Home
             </a></li>
-            <li><a href="/venue" {% if current_path is starting_with("/venue") %}class="active"{% endif %}>
-                Venue
-            </a></li>
-            <li><a href="/registration" {% if current_path is starting_with("/registration") %}class="active"{% endif %}>
-                Registration
-            </a></li>
-            <li><a href="/organizers" {% if current_path is starting_with("/organizers") %}class="active"{% endif %}>
-                Organizers
-            </a></li>
+            {{ macros::menu_button(name="Venue", url="/venue") }}
+            {{ macros::menu_button(name="Registration", url="/registration") }}
+            {{ macros::menu_button(name="Organizers", url="/organizers") }}
           </ul>
         </menu>
       </header>
