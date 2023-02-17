@@ -1,3 +1,6 @@
+// -*- eval: (outshine-mode); -*-
+// * Colors
+
 :root {
   color-scheme: light dark; /* both supported */
 }
@@ -32,6 +35,16 @@ body {
     }
 }
 
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+// * Main structure
+
 body {
     font: 100% $font-stack;
     color: var(--text-color);
@@ -46,13 +59,7 @@ container {
     min-height: 100vh;
 }
 
-a {
-    text-decoration: none;
-    color: var(--link-color);
-}
-a:hover {
-    text-decoration: underline;
-}
+// ** Header
 
 header {
     margin-bottom: 1em;
@@ -63,6 +70,7 @@ header {
 
     background: var(--other-bkg-color);
     border-bottom: solid 1px var(--border-color);
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
 
     .header-text{
         display: inline-block;
@@ -109,11 +117,15 @@ menu {
     }
 }
 
+// ** Main
+
 main {
     padding-left: 2em;
     padding-right: 2em;
     margin-bottom: 5em;
 }
+
+// ** Footer
 
 footer {
     margin-top: auto;
@@ -125,6 +137,8 @@ footer {
     background: var(--other-bkg-color);
     border-top: solid 1px var(--border-color);
 
+    box-shadow: 0.25rem 0 0.125rem 0.125rem rgba(0,0,0,.11);
+
     div {
 
     }
@@ -133,6 +147,55 @@ footer {
         height: 5em;
     }
 }
+// * Programme
+
+#programme {
+    .topic {
+        border: solid 1px var(--border-color);
+        margin-bottom: 1em;
+        padding: 1em;
+
+        box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
+
+        p {
+            margin: 0;
+            margin-bottom: 1em;
+        }
+    }
+    .topic:hover {
+        box-shadow: 0 0.125rem 0.25rem 0 #c10067;
+    }
+
+    .topic-details {
+        h3 {
+            margin: 0;
+            margin-bottom: 1em;
+        }
+        .talk-title {
+            font-style: italic;
+        }
+        .talk-speaker {
+        }
+    }
+}
+
+.talk-page {
+
+    .speaker-affiliations {
+        p {
+            margin: 0;
+        }
+    }
+}
+
+// * Registration
+
+iframe#registration {
+    width: 100%;
+    min-height: 120em;
+}
+
+// * Organizers
 
 #organizer-list {
 
@@ -163,9 +226,4 @@ footer {
     img {
         width: 10em;
     }
-}
-
-iframe#registration {
-    width: 100%;
-    min-height: 120em;
 }

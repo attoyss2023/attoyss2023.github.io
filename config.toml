@@ -15,3 +15,6 @@ highlight_code = false
 [extra]
 # Put all your custom variables here
 email = "attoyss2023@gmail.com"
+start_date = "2023-11-13"
+number_of_days = 3
+timezone = "Europe/Vienna"

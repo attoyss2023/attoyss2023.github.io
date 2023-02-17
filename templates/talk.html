@@ -1,0 +1,26 @@
+{% extends "page.html" %}
+
+{% block page_content %}
+<div class="talk-page">
+  <h1 class="talk-title">
+    {{ page.title }}
+  </h1>
+  <h3 class="speaker">
+    {{ page.extra.speaker }}
+  </h3>
+  {% if page.extra.affiliation %}
+  <div class="speaker-affiliations">
+    {% set affils = page.extra.affiliation %}
+    {% if affils is string %}
+    {% set affils = [affils] %}
+    {% endif %}
+    {% for affil in affils %}
+    <p>{{ affil }}</p>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <div class="talk-abstract">
+    {{ page.content }}
+  </div>
+</div>
+{% endblock page_content %}
