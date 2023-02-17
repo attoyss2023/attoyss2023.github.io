@@ -18,3 +18,6 @@ email = "attoyss2023@gmail.com"
 start_date = "2023-11-13"
 number_of_days = 3
 timezone = "Europe/Vienna"
+registration_form_iframe = "https://docs.google.com/forms/d/e/1FAIpQLSc6Lb_Hd1Y2tftnD3G72iKaT_39yOcRVfFqHowOZoMSdN0aGA/viewform?embedded=true"
+registration_form_link = "https://forms.gle/abNs3Dfr6mCpS2nf8"
+abstract_email = "attoyss2023+abstracts@gmail.com"
