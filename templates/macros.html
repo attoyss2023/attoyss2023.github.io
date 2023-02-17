@@ -1,0 +1,7 @@
+{% macro img_light_dark(light, dark, class) %}
+<picture>
+  <source srcset="{{ dark | safe }}"
+          media="(prefers-color-scheme: dark)" />
+  <img src="{{ light | safe }}" class="{{ class }}" />
+</picture>
+{% endmacro img_light_dark %}
