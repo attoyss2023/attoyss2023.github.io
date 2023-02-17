@@ -2,7 +2,7 @@
   color-scheme: light dark; /* both supported */
 }
 
-$font-stack: Helvetica, sans-serif;
+$font-stack: "Helvetica Neue", Helvetica, sans-serif;
 
 $attochem-purple: #c10067;
 $attochem-grey: #4c4c4c;
@@ -157,4 +157,9 @@ footer {
     img {
         width: 10em;
     }
+}
+
+iframe#registration {
+    width: 100%;
+    min-height: 120em;
 }
