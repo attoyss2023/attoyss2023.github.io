@@ -4,13 +4,14 @@
 
 {% block content %}
 <iframe id="registration"
-        src="{{ config.extra.registration_form_iframe }}"
+        src="{{ config.extra.registration_form_iframe | safe }}"
         frameborder="0" marginheight="0" marginwidth="0">
   If the registration form does not load, please
-  visit <a href="{{ config.extra.registration_form_link }}">{{ config.extra.registration_form_link }}</a>.
+  visit <a href="{{ config.extra.registration_form_link | safe }}">{{ config.extra.registration_form_link | safe }}</a>.
 
-  Abstract submission: send a one-page PDF to <a href="mailto:{{ abstract_email }}?subject=%5BAbstract%20submission%5D">
-    {{ abstract_email }}
+  Abstract submission: send a one-page PDF to <a href="mailto:{{ config.extra.abstract_email | safe }}?subject=%5BAbstract%20submission%5D">
+    {{ config.extra.abstract_email | safe }}
   </a>
 </iframe>
 {% endblock content %}
+
