@@ -27,6 +27,7 @@ jobs:
             mathptmx
             hyperref
             geometry
+            pdftexcmds
             latexmk
       - name: Build abstract templates
         run: cd abstract-templates/LaTeX && make
