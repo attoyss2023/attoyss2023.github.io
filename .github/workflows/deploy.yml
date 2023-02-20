@@ -8,7 +8,8 @@ on:
  pull_request:
 
 jobs:
-  build_and_deploy:
+  build:
+    name: Publish site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout master
@@ -57,7 +58,7 @@ jobs:
             url
       - name: Build abstract templates
         run: cd abstract-templates/LaTeX && make
-      - name: Build only
+      - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.16.1-1
         env:
           BUILD_ONLY: ${{ github.ref != 'refs/heads/master' }}
