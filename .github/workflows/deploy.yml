@@ -16,6 +16,15 @@ jobs:
         uses: actions/checkout@v3.0.0
       - name: Setup TeX Live
         uses: teatimeguest/setup-texlive-action@v2
+        with:
+          packages: >-
+            graphicx
+            inputenc
+            fontenc
+            mathptmx
+            hyperref
+            geometry
+            latexmk
       - name: Build abstract templates
         run: cd abstract-templates/LaTeX && make
       - name: Build only
