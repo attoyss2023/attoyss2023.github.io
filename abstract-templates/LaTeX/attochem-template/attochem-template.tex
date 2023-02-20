@@ -1,0 +1,59 @@
+%sample file for AttoChem Young Scientist Symposium 2023 abstract (1 page)
+% LATEX_CMD: pdflatex
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{graphicx}
+% uncomment according to your operating system:
+% ------------------------------------------------
+\usepackage[latin1]{inputenc}    %% european characters can be used (Windows, old Linux)
+%\usepackage[utf8]{inputenc}     %% european characters can be used (Linux)
+%\usepackage[applemac]{inputenc} %% european characters can be used (Mac OS)
+% ------------------------------------------------
+\usepackage[T1]{fontenc}   %% get hyphenation and accented letters right
+\usepackage{mathptmx}      %% use fitting times fonts also in formulas
+\usepackage[colorlinks=true]{hyperref}
+\NewDocumentCommand{\email}{m o}{\href{mailto:#1\IfNoValueF{#2}{?#2}}{#1}}
+% do not change these lines:
+\thispagestyle{empty}                %% no page numbers!
+\usepackage[left=25mm, right=25mm, top=20mm, bottom=20mm, noheadfoot]{geometry}
+%% please don't change geometry settings!
+
+
+% begin the document
+\begin{document}
+\thispagestyle{empty}
+
+% ---------------------------------------------------
+%
+% Please do your editing here below
+% You might add additional packages using the usepackage
+% command above
+%
+% ---------------------------------------------------
+
+\title{\textbf{Abstract Title}}
+\author{Author Name\textsuperscript{1}, \underline{Presenting Author}\textsuperscript{2}\\ % <--- underline the name of the presenting author  (ex. John Smith)
+\textit{\textsuperscript{1}Affiliation}\\ % \textit{continue Affiliation}\\ <--- if affiliation is too long use second line
+\textit{\textsuperscript{2}Affiliation}\\ % <--- comment out if not used
+\email{name@email.domain}} % <--- e-mail address of the corresponding author
+\date{} % <--- leave date empty
+\maketitle\thispagestyle{empty}
+
+The length of the abstract is limited to one-page. The submitted abstracts will be included in the book of abstracts of the AttoChem Annual Meeting. The book of abstracts will be published online on the conference webpage.
+If you want to make your abstract more attractive and informative, you can include figures and references to articles~\cite{ref1} or books~\cite{ref2}.
+%you can use other dimensions for your figure, this is just an example
+\begin{figure}[h]
+\centerline{\includegraphics [width=0.7\textwidth]{Logo-AttoChem.jpg}}
+\caption{Figure example. Here comes the caption}
+\label{fig1}
+\end{figure}
+
+The {\bf one-page} abstract should be written in English and prepared using this {\LaTeX} template. Please convert your abstract to a PDF file and submit it via mail to \email{attoyss2023+abstracts@gmail.com}[subject=\%5BAbstract\%20submission\%5D].
+
+\begin{thebibliography}{00}
+\setlength{\itemsep}{-3pt}
+\bibitem{ref1} T. Name, Article Title, Journal 34, (2019), 154--160
+\bibitem{ref2} \'{A}. N{\"a}m, Book Title, Publisher Name and Town, (2018), 50--68
+\end{thebibliography}
+
+\end{document}
