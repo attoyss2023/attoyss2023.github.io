@@ -21,6 +21,7 @@ jobs:
             auxhook
             bigintcalc
             bitset
+            collection-fontsrecommended
             ec
             epstopdf-pkg
             etexcmds
