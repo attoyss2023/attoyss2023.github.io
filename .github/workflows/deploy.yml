@@ -19,6 +19,7 @@ jobs:
         with:
           packages: >-
             latex-bin
+            metafont
             graphicx
             inputenc
             fontenc
