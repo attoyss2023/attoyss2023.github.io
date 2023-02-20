@@ -18,6 +18,7 @@ jobs:
         uses: teatimeguest/setup-texlive-action@v2
         with:
           packages: >-
+            latex-bin
             graphicx
             inputenc
             fontenc

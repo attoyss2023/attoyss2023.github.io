@@ -1,7 +1,7 @@
 all: attochem-template.zip
 
 attochem-template/attochem-template.pdf: attochem-template/attochem-template.tex attochem-template/Logo-AttoChem.jpg
-	cd attochem-template && latexmk -pdflatex=pdflatex attochem-template.tex
+	cd attochem-template && latexmk -pdflatex=pdflatex -pdf attochem-template.tex
 
 attochem-template.zip: attochem-template/attochem-template.pdf attochem-template/attochem-template.tex attochem-template/Logo-AttoChem.jpg
 	zip -r9 $@ $^
@@ -9,4 +9,4 @@ attochem-template.zip: attochem-template/attochem-template.pdf attochem-template
 .PHONY: clean
 clean:
 	rm -f 	attochem-template.zip
-	cd attochem-template && latexmk -pdflatex=pdflatex -C attochem-template.tex
+	cd attochem-template && latexmk -pdflatex=pdflatex -pdf -C attochem-template.tex
