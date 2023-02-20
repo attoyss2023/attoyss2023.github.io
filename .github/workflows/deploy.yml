@@ -18,17 +18,43 @@ jobs:
         uses: teatimeguest/setup-texlive-action@v2
         with:
           packages: >-
-            latex-bin
-            metafont
+            auxhook
+            bigintcalc
+            bitset
             ec
-            graphicx
-            inputenc
+            epstopdf-pkg
+            etexcmds
             fontenc
-            mathptmx
-            hyperref
             geometry
-            pdftexcmds
+            gettitlestring
+            graphics
+            graphics-cfg
+            graphicx
+            hycolor
+            hyperref
+            iftex
+            infwarerr
+            inputenc
+            intcalc
+            kvdefinekeys
+            kvoptions
+            kvsetkeys
+            l3backend
+            latex
+            latex-bin
+            latexconfig
             latexmk
+            letltxmacro
+            mathptmx
+            metafont
+            mptopdf
+            pdfescape
+            pdftexcmds
+            psnfss
+            refcount
+            rerunfilecheck
+            uniquecounter
+            url
       - name: Build abstract templates
         run: cd abstract-templates/LaTeX && make
       - name: Build only
