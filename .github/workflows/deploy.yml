@@ -14,10 +14,13 @@ jobs:
     steps:
       - name: Checkout master
         uses: actions/checkout@v3.0.0
+      - name: Setup TeX Live
+        uses: teatimeguest/setup-texlive-action@v2
+      - name: Build abstract templates
+        run: cd abstract-templates/LaTeX && make
       - name: Build only
         uses: shalzz/zola-deploy-action@v0.16.1-1
         env:
-          BUILD_DIR: docs
           BUILD_ONLY: true
           BUILD_FLAGS: --drafts
           # A GitHub token is not necessary when BUILD_ONLY is true
@@ -32,6 +35,5 @@ jobs:
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.16.1-1
         env:
-          BUILD_DIR: docs
           PAGES_BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
