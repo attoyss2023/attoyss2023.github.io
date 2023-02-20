@@ -20,6 +20,7 @@ jobs:
           packages: >-
             latex-bin
             metafont
+            ec
             graphicx
             inputenc
             fontenc
