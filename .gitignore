@@ -2,3 +2,4 @@
 .DS_Store
 public/
 static/abstract-templates/*.zip
+content/programme/talks/*.png
