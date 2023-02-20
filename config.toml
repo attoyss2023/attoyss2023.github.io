@@ -15,7 +15,7 @@ highlight_code = false
 [extra]
 # Put all your custom variables here
 email = "attoyss2023@gmail.com"
-start_date = "2023-11-13"
+start_date = "2023-09-13"
 number_of_days = 3
 timezone = "Europe/Vienna"
 registration_form_iframe = "https://docs.google.com/forms/d/e/1FAIpQLSc6Lb_Hd1Y2tftnD3G72iKaT_39yOcRVfFqHowOZoMSdN0aGA/viewform?embedded=true"
