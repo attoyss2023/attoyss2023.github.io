@@ -19,6 +19,8 @@ body {
   --link-color: #c10067;
   --active-link-color: ivory;
   --active-link-bg-color: #c10067;
+
+  --shadow-color: rgba(0,0,0,.11);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,6 +34,8 @@ body {
         --link-color: #c10067;
         --active-link-color: antiquewhite;
         --active-link-bg-color: #c10067;
+
+        --shadow-color: rgba(255,255,255,.61);
     }
 }
 
@@ -70,7 +74,7 @@ header {
 
     background: var(--other-bkg-color);
     border-bottom: solid 1px var(--border-color);
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
+    box-shadow: 0 0.125rem 0.25rem 0 var(--shadow-color);
 
     .header-text{
         display: inline-block;
@@ -137,7 +141,7 @@ footer {
     background: var(--other-bkg-color);
     border-top: solid 1px var(--border-color);
 
-    box-shadow: 0.25rem 0 0.125rem 0.125rem rgba(0,0,0,.11);
+    box-shadow: 0.25rem 0 0.125rem 0.125rem var(--shadow-color);
 
     div {
 
@@ -155,7 +159,7 @@ footer {
         margin-bottom: 1em;
         padding: 1em;
 
-        box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
+        box-shadow: 0 0.125rem 0.25rem 0 var(--shadow-color);
 
         p {
             margin: 0;
