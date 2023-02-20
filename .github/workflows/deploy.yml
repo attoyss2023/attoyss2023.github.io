@@ -5,15 +5,62 @@ on:
  push:
   branches:
    - master
+ pull_request:
 
 jobs:
-  build:
-    name: Publish site
+  build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout main
-      uses: actions/checkout@v3.0.0
-    - name: Build and deploy
-      uses: shalzz/zola-deploy-action@v0.16.1-1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout master
+        uses: actions/checkout@v3.0.0
+      - name: Setup TeX Live
+        uses: teatimeguest/setup-texlive-action@v2
+        with:
+          packages: >-
+            auxhook
+            bigintcalc
+            bitset
+            collection-fontsrecommended
+            ec
+            epstopdf-pkg
+            etexcmds
+            fontenc
+            geometry
+            gettitlestring
+            graphics
+            graphics-cfg
+            graphicx
+            hycolor
+            hyperref
+            iftex
+            infwarerr
+            inputenc
+            intcalc
+            kvdefinekeys
+            kvoptions
+            kvsetkeys
+            l3backend
+            latex
+            latex-bin
+            latexconfig
+            latexmk
+            letltxmacro
+            mathptmx
+            metafont
+            mptopdf
+            pdfescape
+            pdftexcmds
+            psnfss
+            refcount
+            rerunfilecheck
+            uniquecounter
+            url
+      - name: Build abstract templates
+        run: cd abstract-templates/LaTeX && make
+      - name: Build only
+        uses: shalzz/zola-deploy-action@v0.16.1-1
+        env:
+          BUILD_ONLY: ${{ github.ref != 'refs/heads/master' }}
+          BUILD_FLAGS: "${{ github.ref != 'refs/heads/master' && '--drafts' || ''}}"
+          PAGES_BRANCH: gh-pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
