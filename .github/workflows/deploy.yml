@@ -56,6 +56,14 @@ jobs:
             rerunfilecheck
             uniquecounter
             url
+      - name: Install ImageMagick and Ghostscript
+        run: sudo apt-get install imagemagick ghostscript
+      - name: Change ImageMagick policy to allow pdf->png conversion.
+        # https://wessman.co/github-actions-imagemagick
+        run: |
+          sudo sed -i 's/^.*policy.*coder.*none.*PDF.*//' /etc/ImageMagick-6/policy.xml
+      - name: Generate abstract thumbnails
+        run: cd content/programme/talks && ./make-previews.sh
       - name: Build abstract templates
         run: cd abstract-templates/LaTeX && make
       - name: Build and deploy
