@@ -69,7 +69,7 @@ jobs:
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.16.1-1
         env:
-          BUILD_ONLY: ${{ github.ref != 'refs/heads/publish' }}
-          BUILD_FLAGS: "${{ github.ref != 'refs/heads/publish' && '--drafts' || ''}}"
+          BUILD_ONLY: ${{ github.ref != 'refs/heads/master' }}
+          BUILD_FLAGS: "${{ github.ref != 'refs/heads/master' && '--drafts' || ''}}"
           PAGES_BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
