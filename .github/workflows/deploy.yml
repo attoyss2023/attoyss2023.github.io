@@ -63,7 +63,10 @@ jobs:
         run: |
           sudo sed -i 's/^.*policy.*coder.*none.*PDF.*//' /etc/ImageMagick-6/policy.xml
       - name: Generate abstract thumbnails
-        run: cd content/programme/talks && ./make-previews.sh
+        run: |
+          if test -d "content/programme/talks"; then
+            cd content/programme/talks && ./make-previews.sh
+          fi
       - name: Build abstract templates
         run: cd abstract-templates/LaTeX && make
       - name: Build and deploy
