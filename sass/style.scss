@@ -127,6 +127,12 @@ main {
     padding-left: 2em;
     padding-right: 2em;
     margin-bottom: 5em;
+
+    section {
+        img {
+            max-width: 100%;
+        }
+    }
 }
 
 // ** Footer
