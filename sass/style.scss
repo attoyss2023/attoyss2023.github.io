@@ -208,15 +208,17 @@ iframe#registration {
 // * Organizers
 
 #organizer-list {
-
+    display: flex;
+    flex-flow: column;
 }
 
 .organizer {
     padding-bottom: 0.25em;
+    display: flex;
 }
 
 .organizer-details {
-    display: inline-block;
+    display: flex-grow;
     vertical-align: top;
     margin-top: 0.5em;
     margin-left: 1em;
@@ -231,7 +233,8 @@ iframe#registration {
 }
 
 .organizer-portrait {
-    display: inline-block;
+    width: 10em;
+    min-width: 10em;
     vertical-align: top;
     img {
         width: 10em;
