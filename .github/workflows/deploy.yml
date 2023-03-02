@@ -67,7 +67,7 @@ jobs:
       - name: Build abstract templates
         run: cd abstract-templates/LaTeX && make
       - name: Build and deploy
-        uses: shalzz/zola-deploy-action@v0.16.1-1
+        uses: shalzz/zola-deploy-action@v0.17.1
         env:
           BUILD_ONLY: ${{ github.ref != 'refs/heads/master' }}
           BUILD_FLAGS: "${{ github.ref != 'refs/heads/master' && '--drafts' || ''}}"
