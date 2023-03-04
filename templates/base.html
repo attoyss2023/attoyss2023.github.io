@@ -36,7 +36,7 @@
         </section>
       </main>
       <footer>
-        <div>
+        <div id="eu-boilerplate">
           <p>
             {{ macros::img_light_dark(light="/logos/COST_LOGO_darkgrey_transparentbackground.png",
             dark="/logos/COST_LOGO_white_transparentbackground.png",
@@ -55,9 +55,12 @@
             their peers. This boosts their research, career and
             innovation. <a href="https://www.cost.eu/">https://www.cost.eu/</a>
           </p>
+          <p>
+            Contact: <a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a>
+          </p>
         </div>
-        <div>
-          Contact: <a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a>
+        <div id="prater">
+          <img src="/vienna/prater.jpg">
         </div>
       </footer>
     </container>

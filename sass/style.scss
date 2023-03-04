@@ -140,17 +140,24 @@ main {
 footer {
     margin-top: auto;
     padding-top: 1em;
-    padding-bottom: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
 
     background: var(--other-bkg-color);
     border-top: solid 1px var(--border-color);
 
     box-shadow: 0.25rem 0 0.125rem 0.125rem var(--shadow-color);
 
-    div {
+    display: flex;
 
+    div#eu-boilerplate {
+        padding-bottom: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    div#prater {
+        margin-top: auto;
+        img {
+            height: 15em;
+        }
     }
 
     .footer-logo {
