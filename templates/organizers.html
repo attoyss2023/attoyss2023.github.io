@@ -36,7 +36,14 @@
         {% endfor %}
       </p>
       {% if organizer.extra.homepage %}
-      <a href="{{ organizer.extra.homepage }}">{{ organizer.extra.homepage }}</a>
+      {% set homepages = organizer.extra.homepage %}
+      {% if homepages is string %}
+      {% set homepages = [homepages] %}
+      {% endif %}
+      {% for homepage in homepages %}
+      <a href="{{ homepage }}">{{ homepage }}</a>
+      {% if not loop.last %}<br/>{% endif %}
+      {% endfor %}
       {% endif %}
     </div>
   </div>
