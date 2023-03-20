@@ -1,9 +1,10 @@
 +++
 [extra]
 name = "Iva Březinová"
-affiliation = "Institut für Theoretische Physik, TU Wien, Austria"
+affiliation = "Institute for Theoretical Physics, TU Wien, Austria"
 email = "iva.brezinova@tuwien.ac.at"
-portrait = "Brezinova_Iva_WinterPreis.jpg"
+portrait = "Iva_Brezinova.jpg"
+homepage = "http://dollywood.itp.tuwien.ac.at/"
 order = 0
 +++
 Coordinator
