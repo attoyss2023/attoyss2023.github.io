@@ -17,7 +17,7 @@ jobs:
       - name: Setup TeX Live
         uses: teatimeguest/setup-texlive-action@v2
         with:
-          version: 2022
+          version: 2023
           packages: >-
             auxhook
             bigintcalc
