@@ -2,7 +2,7 @@
 title = "Venue"
 +++
 
-The venue for the conference is _Technical University, Vienna_ ([TU
+The venue for the conference is _Vienna University of Technology_ ([TU
 Wien](https://www.tuwien.at)), _[Campus
 Freihaus](https://www.tuwien.at/tu-wien/campus/tu-univercity/standorte/freihaus)_.
 
