@@ -254,6 +254,16 @@ footer {
 
 // * Registration
 
+#registration-wrapper {
+    filter: hue-rotate(60deg) saturate(200%) brightness(101.76%);
+}
+
+@media (prefers-color-scheme: dark) {
+    #registration-wrapper {
+        filter: invert(90%) hue-rotate(210deg) saturate(102.33%) brightness(100.78%);
+    }
+}
+
 iframe#registration {
     width: 100%;
     min-height: 120em;

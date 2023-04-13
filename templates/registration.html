@@ -3,15 +3,16 @@
 {% block title %} – Home{% endblock title %}
 
 {% block content %}
-<iframe id="registration"
-        src="{{ config.extra.registration_form_iframe | safe }}"
-        frameborder="0" marginheight="0" marginwidth="0">
-  If the registration form does not load, please
-  visit <a href="{{ config.extra.registration_form_link | safe }}">{{ config.extra.registration_form_link | safe }}</a>.
+<div id="registration-wrapper">
+  <iframe id="registration"
+          src="{{ config.extra.registration_form_iframe | safe }}"
+          frameborder="0" marginheight="0" marginwidth="0">
+    If the registration form does not load, please
+    visit <a href="{{ config.extra.registration_form_link | safe }}">{{ config.extra.registration_form_link | safe }}</a>.
 
-  Abstract submission: send a one-page PDF to <a href="mailto:{{ config.extra.abstract_email | safe }}?subject=%5BAbstract%20submission%5D">
-    {{ config.extra.abstract_email | safe }}
-  </a>
-</iframe>
+    Abstract submission: send a one-page PDF to <a href="mailto:{{ config.extra.abstract_email | safe }}?subject=%5BAbstract%20submission%5D">
+      {{ config.extra.abstract_email | safe }}
+    </a>
+  </iframe>
+</div>
 {% endblock content %}
-
