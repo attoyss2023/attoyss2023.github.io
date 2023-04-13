@@ -16,8 +16,9 @@ Austria<br/>
 
 Lectures will take place in [FH Hörsaal
 5](https://raumkatalog.tiss.tuwien.ac.at/room/17170)
-([map](https://tuw-maps.tuwien.ac.at/?q=DA02G15)) and the poster
-sessions in [A05](https://tuw-maps.tuwien.ac.at/?q=DA02A05).
+(green area, 2nd floor; [map](https://tuw-maps.tuwien.ac.at/?q=DA02G15)) and the poster
+sessions in [A05](https://tuw-maps.tuwien.ac.at/?q=DA02A05), directly
+in front of the lecture room.
 
 [![](/maps/city-level.png)](https://tuw-maps.tuwien.ac.at/?centerx=1823448.8011115745&centery=6140904.299310439&zlevel=14.779830932617186&floor=0)
 
