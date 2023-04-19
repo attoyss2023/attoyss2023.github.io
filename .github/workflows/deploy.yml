@@ -57,6 +57,8 @@ jobs:
             rerunfilecheck
             uniquecounter
             url
+      - name: Update APT
+        run: sudo apt-get update
       - name: Install ImageMagick and Ghostscript
         run: sudo apt-get install imagemagick ghostscript
       - name: Change ImageMagick policy to allow pdf->png conversion.
