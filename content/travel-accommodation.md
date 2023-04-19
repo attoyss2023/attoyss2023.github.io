@@ -23,7 +23,7 @@ title = "Travel and Accommodation"
     €24.90 return ticket) to _Landstraße/Wien Mitte_.
 
 
-## Accommodation
+## Accommodation 🏨
 
 Please find some non-binding recommendations below, all within the
 price range of 90 – 330 Euro for a three-night stay.  All links
@@ -74,5 +74,10 @@ provided are external Google links.
 
 ## Reimbursement 💸
 
-The are reimbursement funds available for COST action members. More
+There are reimbursement funds available for COST action members. To
+request working group membership, participants need to [fill out this
+form](https://e-services.cost.eu/action/CA18222/working-groups/apply). It
+is required to have an e-COST profile to submit the application. If
+needed, it can be [created
+here](https://e-services.cost.eu/user/registration/email). More
 details will follow later.
