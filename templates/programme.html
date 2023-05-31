@@ -2,47 +2,6 @@
 {% import "programme-macros.html" as pmacros %}
 
 {% block section_content %}
-{# This hack only works if the conference is within the same calendar
-month #}
-{% set start_day = config.extra.start_date | date(format="%d", timezone=config.extra.timezone) | int %}
-<div id="programme">
-  {% for day in range(end=config.extra.number_of_days) %}
-  <div class="day">
-    <h2>Day {{ day+1 }}</h2>
-    {% for topic in section.pages | reverse %}
-    {% if topic.day - start_day != day %}{% continue %}{% endif %}
-    {% set start_hour = topic.date | date(format="%H", timezone=config.extra.timezone) | int - 9 %}
-    {% set start_minute = topic.date | date(format="%M", timezone=config.extra.timezone) | int + 60*start_hour %}
-    {% set stop_hour = topic.extra.enddate | date(format="%H", timezone=config.extra.timezone) | int - 9 %}
-    {% set stop_minute = topic.extra.enddate | date(format="%M", timezone=config.extra.timezone) | int + 60*stop_hour %}
-    {% set duration = stop_minute - start_minute %}
-    {% set height = duration/10*2 %}
-    <div class="topic {{ topic.extra.kind }}" style="min-height: {{ height }}em; max-height: {{ height }}em; overflow: hidden;">
-      <div class="topic-details">
-        <h3>{{ topic.title }}</h3>
-        <p>
-          {{ topic.date | date(format="%H:%M", timezone=config.extra.timezone) }}
-          –
-          {{ topic.extra.enddate | date(format="%H:%M", timezone=config.extra.timezone) }}
-        </p>
-        {% if topic.extra.keynote %}
-        <p><b>Keynote</b>
-          {{ pmacros::talk_box(md="programme/talks/"~topic.extra.keynote~".md") }}
-        </p>
-        {% endif %}
-        {% if topic.extra.talks %}
-        {% for talk in topic.extra.talks %}
-        <p>
-          {{ pmacros::talk_box(md="programme/talks/"~talk~".md") }}
-        </p>
-        {% endfor %}
-        {% endif %}
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-  {% endfor %}
-</div>
 {{ section.content | safe }}
 <h1>Schedule</h1>
 NOTE: This time schedule will be updated as soon as we finalise the programme.
