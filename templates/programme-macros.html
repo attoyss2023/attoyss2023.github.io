@@ -1,7 +1,11 @@
 {% macro talk_box(md) %}
 {% set page = get_page(path=md) %}
 {% set url = get_url(path="@/"~md) %}
+{% if page.extra %}
+{% if page.extra.speaker %}
 <span class="talk-speaker">{{ page.extra.speaker }}</span>
+{% endif %}
+{% endif %}
 <a href="{{ url }}">
   <span class="talk-title">{{ page.title }}</span>
 </a>

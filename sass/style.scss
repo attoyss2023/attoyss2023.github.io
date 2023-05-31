@@ -221,31 +221,98 @@ footer {
 // * Programme
 
 #programme {
-    .topic {
-        border: solid 1px var(--border-color);
-        margin-bottom: 1em;
-        padding: 1em;
+    width: 15em;
 
-        box-shadow: 0 0.125rem 0.25rem 0 var(--shadow-color);
+    .day {
+        display: flex;
+        flex-flow: row wrap;
 
-        p {
-            margin: 0;
-            margin-bottom: 1em;
+        padding: 0;
+
+        .topic {
+            width: 100%;
+            // border: solid 1px var(--border-color);
+            // margin-bottom: 1em;
+            // padding: 1em;
+            padding-left: 1em;
+            padding-right: 1em;
+
+            box-shadow: 0 0.125rem 0.25rem 0 var(--shadow-color);
+
+            p {
+                margin: 0;
+                //margin-bottom: 1em;
+            }
+        }
+        .topic:hover {
+            box-shadow: 0 0.125rem 0.25rem 0 #c10067;
+        }
+
+        .topic-details {
+            h3 {
+                margin: 0;
+                margin-bottom: 1em;
+            }
+            .talk-title {
+                font-style: italic;
+            }
+            .talk-speaker {
+            }
+        }
+
+        .tutorial {
+            background: orange;
+            color: #3c3836;
+        }
+
+        .invited {
+            background: lightgrey;
+            color: #3c3836;
+        }
+
+        .paper {
+            background: salmon;
+            color: #3c3836;
+        }
+
+        .poster {
+            background: $attochem-purple;
+            color: antiquewhite;
+        }
+
+        .lunch {
+            background: teal;
+            color: antiquewhite;
+        }
+
+        .coffee {
+            background: lightblue;
+            color: #3c3836;
+        }
+
+        .welcome, .concluding-remarks {
+            background: forestgreen;
+            color: antiquewhite;
         }
     }
-    .topic:hover {
-        box-shadow: 0 0.125rem 0.25rem 0 #c10067;
-    }
+}
 
-    .topic-details {
-        h3 {
-            margin: 0;
-            margin-bottom: 1em;
-        }
-        .talk-title {
-            font-style: italic;
-        }
-        .talk-speaker {
+
+@media only screen and (min-width: 769px) {
+    #programme {
+        display: flex;
+        flex-flow: column wrap;
+
+        height: 120em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #programme {
+        display: block;
+
+        .day {
+            width: 100%;
         }
     }
 }
