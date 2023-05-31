@@ -2,6 +2,9 @@
 {% import "programme-macros.html" as pmacros %}
 
 {% block section_content %}
+{{ section.content | safe }}
+<h1>Schedule</h1>
+NOTE: This time schedule will be updated as soon as we finalise the programme.
 {# This hack only works if the conference is within the same calendar
 month #}
 {% set start_day = config.extra.start_date | date(format="%d", timezone=config.extra.timezone) | int %}
@@ -43,5 +46,4 @@ month #}
   </div>
   {% endfor %}
 </div>
-{{ section.content | safe }}
 {% endblock section_content %}

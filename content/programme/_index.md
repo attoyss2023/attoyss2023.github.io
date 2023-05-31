@@ -56,4 +56,68 @@ well as poster sessions at the end of each day.
     _Laser control of an excited-state vibrational wave packet in
     neutral H₂_ ([arXiv preprint](https://arxiv.org/abs/2301.03908))
 
-Detailed programme will follow.
+# Format
+
+Our YSS 2023 will feature 4 different types of ORAL PRESENTATIONS:
+
+## TUTORIAL LECTURES
+
+There will be 6 Tutorial Lectures given by our invited expert
+speakers, subdivided into three main topics focussing on the ultrafast
+electronic interactions in (1) atoms, (2) molecules and (3) condensed
+matter. For each of the above topics, there will be one tutorial
+covering the experimental aspects and techniques and one dedicated to
+the theoretical methods needed to describe the pertinent phenomena.
+
+The duration of each TUTORIAL LECTURE is of 60min subdivided in 50’ of
+presentation followed by 10’ of questions, answer and discussion
+(Q&A&D).
+
+## INVITED LECTURES
+
+There will be 4 Invited Lectures given by our invited speakers
+covering both the experimental aspects and the theoretical methods
+needed to describe the pertinent phenomena in the various types of
+targets.  The duration of each INVITED LECTURE is of 40min subdivided
+in 35’ of presentation followed by 5’ of questions, answer and
+discussion (Q&A&D).
+
+## INVITED PAPER LECTURES
+There will be also 4 so-called “Invited Paper Lectures” given by
+invited young researchers who will have the opportunity to present one
+of their most recent works. Their lecture will focuson ONE SINGLE
+PUBLICATION (made available on our homepage in due time). The aim of
+such a paper presentation is to stimulate prolonged and detailed
+discussions among the speaker and the audience, giving the opportunity
+to discuss in depth also the details of the presented work.
+
+The duration of each INVITED PAPER LECTURE is of 40min subdivided in
+25’ of presentation followed by 15’ of questions, answer and
+discussion (Q&A&D).
+
+To promote a fruitful exchange and an active Q&A&D session, the
+organisers strongly suggest to the audience to read these papers
+beforehand. This should give the opportunity to formulate targeted
+questions and to focus on the details of the presented work.
+
+## CONTRIBUTED TALKS
+We have also reserved 16 time slots of 20min duration each to
+contributed talks where young researchers get the opportunity to
+present and discuss their most recent work before an expert audience.
+
+The duration of each CONTRIBUTED TALK is of 20min subdivided in 15’ of
+presentation followed by 5’ of questions, answer and discussion
+(Q&A&D)
+
+## POSTER SESSION
+We also wish to give an ample opportunity to young scientist to
+discuss their work in form of POSTER presentations. To this end, we
+scheduled two poster sessions at the end of the first two days of our
+symposium. The poster sessions will be accompanied by a small buffet
+with refreshments.
+
+POSTER panels are in A0 size. The poster can be mounted already at the
+beginning of the symposium and can be left hanging during the entire
+duration of the symposium, so that participants can initiate and
+continue discussions also during the coffee breaks.
+
