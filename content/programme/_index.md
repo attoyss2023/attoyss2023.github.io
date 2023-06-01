@@ -15,7 +15,7 @@ specific paper, with ample time for discussion with the
 author. Naturally, there will also be contributed talks (6 slots) as
 well as poster sessions at the end of each day.
 
-# Confirmed invited speakers
+# Confirmed Invited Speakers
 
 ## Tutorials
 - Giuseppe Sansone, [Uni Freiburg](https://www.atto.uni-freiburg.de/en)
@@ -25,14 +25,14 @@ well as poster sessions at the end of each day.
 - Martin Schultze, [TU Graz](https://www.tugraz.at/institute/iep/home/)
 - Christoph Lemell, [TU Wien](http://concord.itp.tuwien.ac.at/~lemell/)
 
-## Invited talks
+## Invited Talks
 
 - Andrew Maxwell, [Aarhus University](https://asmaxwell.github.io/)
 - Maria Richter, [Max Born Institute](https://mbi-berlin.de/p/mariarichter)
 - Rui E. F. Silva, [Instituto de Ciencia de Materiales de Madrid](https://ruiefdasilva.wixsite.com/ruiefdasilva)
 - Václav Hanus, [Wigner Research Centre](https://femtolab.hu/)
 
-## Invited paper talks
+## Invited Paper Talks
 
 - Robin Weissenbilder, [Lund University](https://www.atomic.physics.lu.se/research/attosecond-physics-from-lasers-to-applications/)
 
@@ -58,9 +58,9 @@ well as poster sessions at the end of each day.
 
 # Format
 
-Our YSS 2023 will feature 4 different types of ORAL PRESENTATIONS:
+Our YSS 2023 will feature 4 different types of _oral presentations_:
 
-## TUTORIAL LECTURES
+## Tutorial Lectures
 
 There will be 6 Tutorial Lectures given by our invited expert
 speakers, subdivided into three main topics focussing on the ultrafast
@@ -69,54 +69,54 @@ matter. For each of the above topics, there will be one tutorial
 covering the experimental aspects and techniques and one dedicated to
 the theoretical methods needed to describe the pertinent phenomena.
 
-The duration of each TUTORIAL LECTURE is of 60min subdivided in 50’ of
+The duration of each _tutorial lecture_ is of 60min subdivided in 50’ of
 presentation followed by 10’ of questions, answer and discussion
 (Q&A&D).
 
-## INVITED LECTURES
+## Invited Lectures
 
 There will be 4 Invited Lectures given by our invited speakers
 covering both the experimental aspects and the theoretical methods
 needed to describe the pertinent phenomena in the various types of
-targets.  The duration of each INVITED LECTURE is of 40min subdivided
+targets.  The duration of each _invited lecture_ is of 40min subdivided
 in 35’ of presentation followed by 5’ of questions, answer and
 discussion (Q&A&D).
 
-## INVITED PAPER LECTURES
+## Invited Paper Lectures
 There will be also 4 so-called “Invited Paper Lectures” given by
 invited young researchers who will have the opportunity to present one
-of their most recent works. Their lecture will focuson ONE SINGLE
-PUBLICATION (made available on our homepage in due time). The aim of
-such a paper presentation is to stimulate prolonged and detailed
-discussions among the speaker and the audience, giving the opportunity
-to discuss in depth also the details of the presented work.
+of their most recent works. Their lecture will focus on _one single
+publication_ (made available on our homepage). The aim of such a paper
+presentation is to stimulate prolonged and detailed discussions among
+the speaker and the audience, giving the opportunity to discuss in
+depth also the details of the presented work.
 
-The duration of each INVITED PAPER LECTURE is of 40min subdivided in
+The duration of each _invited paper lecture_ is of 40min subdivided in
 25’ of presentation followed by 15’ of questions, answer and
 discussion (Q&A&D).
 
 To promote a fruitful exchange and an active Q&A&D session, the
-organisers strongly suggest to the audience to read these papers
+organizers strongly suggest to the audience to read these papers
 beforehand. This should give the opportunity to formulate targeted
 questions and to focus on the details of the presented work.
 
-## CONTRIBUTED TALKS
+## Contributed Talks
 We have also reserved 16 time slots of 20min duration each to
 contributed talks where young researchers get the opportunity to
 present and discuss their most recent work before an expert audience.
 
-The duration of each CONTRIBUTED TALK is of 20min subdivided in 15’ of
-presentation followed by 5’ of questions, answer and discussion
+The duration of each _contributed talk_ is of 20min subdivided in 15’
+of presentation followed by 5’ of questions, answer and discussion
 (Q&A&D)
 
-## POSTER SESSION
-We also wish to give an ample opportunity to young scientist to
-discuss their work in form of POSTER presentations. To this end, we
-scheduled two poster sessions at the end of the first two days of our
+## Poster Session
+We also wish to give ample opportunity to young scientist to discuss
+their work in form of _poster_ presentations. To this end, we scheduled
+two poster sessions at the end of the first two days of our
 symposium. The poster sessions will be accompanied by a small buffet
 with refreshments.
 
-POSTER panels are in A0 size. The poster can be mounted already at the
+_Poster_ panels are in A0 size. The poster can be mounted already at the
 beginning of the symposium and can be left hanging during the entire
 duration of the symposium, so that participants can initiate and
 continue discussions also during the coffee breaks.
