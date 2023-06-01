@@ -4,11 +4,12 @@
 {% block section_content %}
 {{ section.content | safe }}
 <h1>Schedule</h1>
-NOTE: This time schedule will be updated as soon as we finalise the programme.
+NOTE: This time schedule will be updated as soon as we finalize the programme.
 {# This hack only works if the conference is within the same calendar
 month #}
 {% set start_day = config.extra.start_date | date(format="%d", timezone=config.extra.timezone) | int %}
-<div id="programme">
+{% set day_width = 100/config.extra.number_of_days %}
+<div id="programme" style="flex-basis: {{ day_width}}%;">
   {% for day in range(end=config.extra.number_of_days) %}
   <div class="day">
     <h2>Day {{ day+1 }}</h2>
