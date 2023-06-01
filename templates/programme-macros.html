@@ -10,3 +10,11 @@
   <span class="talk-title">{{ page.title }}</span>
 </a>
 {% endmacro talk_box %}
+
+{% macro add_day(start_date, num_days) %}
+{% set year = start_date | date(format="%Y") %}
+{% set month = start_date | date(format="%m") %}
+{% set day = start_date | date(format="%d") | int + num_days %}
+{% set new_date = year ~ "-" ~ month ~ "-" ~ day %}
+{{ new_date | date(format="%a %b %e", timezone=config.extra.timezone) }}
+{% endmacro %}

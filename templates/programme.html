@@ -12,7 +12,7 @@ month #}
 <div id="programme" style="flex-basis: {{ day_width}}%;">
   {% for day in range(end=config.extra.number_of_days) %}
   <div class="day">
-    <h2>Day {{ day+1 }}</h2>
+    <h2>{{ pmacros::add_day(start_date=config.extra.start_date, num_days=day) }}</h2>
     {% for topic in section.pages | reverse %}
     {% if topic.day - start_day != day %}{% continue %}{% endif %}
     {% set start_hour = topic.date | date(format="%H", timezone=config.extra.timezone) | int - 9 %}
