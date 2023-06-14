@@ -2,6 +2,23 @@
 title = "Travel and Accommodation"
 +++
 
+All participants are themselves responsible for arranging travel and
+accommodation. After the end of the workshop, expenses can be
+reimbursed, as detailed below.
+
+⚠️ _Any and all emails purporting to represent a travel agency acting on
+behalf of AttoChem are to be considered as **spam**._ ⚠️
+
+## Reimbursement 💸
+
+There are reimbursement funds available for COST action members. To
+request working group membership, participants need to [fill out this
+form](https://e-services.cost.eu/action/CA18222/working-groups/apply). It
+is required to have an e-COST profile to submit the application. If
+needed, it can be [created
+here](https://e-services.cost.eu/user/registration/email). More
+details will follow later.
+
 ## Travel 🚆🛬
 
 - From _Hauptbahnhof_ (Vienna central station): take the underground **U1**
@@ -71,13 +88,3 @@ provided are external Google links.
 
 
 <img src="/maps/hotels.png" />
-
-## Reimbursement 💸
-
-There are reimbursement funds available for COST action members. To
-request working group membership, participants need to [fill out this
-form](https://e-services.cost.eu/action/CA18222/working-groups/apply). It
-is required to have an e-COST profile to submit the application. If
-needed, it can be [created
-here](https://e-services.cost.eu/user/registration/email). More
-details will follow later.
