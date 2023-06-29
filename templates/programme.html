@@ -4,7 +4,10 @@
 {% block section_content %}
 {{ section.content | safe }}
 <h1>Schedule</h1>
-NOTE: This time schedule will be updated as soon as we finalize the programme.
+<p>NOTE: This time schedule will be updated as soon as we finalize the
+programme.</p>
+
+<p>Click the name of a speaker to read the abstract for that talk.</p>
 {# This hack only works if the conference is within the same calendar
 month #}
 {% set start_day = config.extra.start_date | date(format="%d", timezone=config.extra.timezone) | int %}
@@ -24,7 +27,7 @@ month #}
     <div class="topic {{ topic.extra.kind }}" style="min-height: {{ height }}em; max-height: {{ height }}em; overflow: hidden;">
       <div class="topic-details">
         <h3>{{ topic.title }}</h3>
-        <p>
+        <p class="topic-time">
           {{ topic.date | date(format="%H:%M", timezone=config.extra.timezone) }}
           –
           {{ topic.extra.enddate | date(format="%H:%M", timezone=config.extra.timezone) }}
