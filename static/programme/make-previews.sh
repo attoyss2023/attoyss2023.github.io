@@ -6,5 +6,6 @@ for i in *.pdf; do
     [ -f "$pngname" ] && [ "$pngname" -nt "$i" ] && continue
     echo $i $pngname
 
-    convert -density 600 $i -resize 800x $pngname
+    # https://stackoverflow.com/a/12614851
+    convert -density 600 "${i}[0]" -resize 800x $pngname
 done
