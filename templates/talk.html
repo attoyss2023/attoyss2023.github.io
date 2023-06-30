@@ -20,7 +20,7 @@
   </div>
   {% endif %}
   <div class="talk-abstract">
-    {{ page.content }}
+    {{ page.content | safe }}
 
     {% set talk_name = page.components | last %}
     {% set image_path = "programme/talks/"~talk_name~".png" %}
@@ -28,7 +28,7 @@
     {% if image_meta %}
     <br/>
     <a href={{ get_url(path="programme/talks/"~talk_name~".pdf") }}>
-      <img src={{ get_url(path=image_path) }} alt="{{ "Click here to download the abstract for the talk of " ~ page.extra.speaker ~ " as a PDF" }}" />
+      <img class="abstract" src={{ get_url(path=image_path) }} alt="{{ "Click here to download the abstract for the talk of " ~ page.extra.speaker ~ " as a PDF" }}" />
     </a>
     {% endif %}
   </div>

@@ -42,7 +42,9 @@ well as poster sessions at the end of each day.
 
 - Tadas Balčiūnas, [ETH Zürich](https://atto.ethz.ch/)
 
-    _Femtosecond Proton Transfer in Urea Solutions Probed by X-ray Spectroscopy_
+    _Femtosecond Proton Transfer in Urea Solutions Probed by X-ray
+    Spectroscopy_ (DOI:
+    [10.1038/s41586-023-06182-6](https://doi.org/10.1038/s41586-023-06182-6))
 
 - Santanu Mandal, [Uni Rostock](https://www.xplab.physik.uni-rostock.de/)
 

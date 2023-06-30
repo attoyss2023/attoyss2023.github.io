@@ -65,10 +65,14 @@ jobs:
         # https://wessman.co/github-actions-imagemagick
         run: |
           sudo sed -i 's/^.*policy.*coder.*none.*PDF.*//' /etc/ImageMagick-6/policy.xml
+      - name: More ImageMagick cache
+        # https://stackoverflow.com/a/53699200
+        run: |
+          sudo sed -i 's:<policy domain="resource" name="disk" value="1GiB"/>:<policy domain="resource" name="disk" value="8GiB"/>:' /etc/ImageMagick-6/policy.xml
       - name: Generate abstract thumbnails
         run: |
-          if test -d "content/programme/talks"; then
-            cd content/programme/talks && ./make-previews.sh
+          if test -d "static/programme/talks"; then
+            cd static/programme/talks && ../make-previews.sh
           fi
       - name: Build abstract templates
         run: cd abstract-templates/LaTeX && make

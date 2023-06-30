@@ -2,5 +2,5 @@
 .DS_Store
 public/
 static/abstract-templates/*.zip
-content/programme/talks/*.png
+static/programme/talks/*.png
 abstract-templates/LaTeX/attochem-template/auto/

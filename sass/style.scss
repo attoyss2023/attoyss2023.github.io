@@ -251,7 +251,9 @@ footer {
         .topic-details {
             h3 {
                 margin: 0;
-                margin-bottom: 1em;
+            }
+            .topic-time {
+                font-size: 0.8em;
             }
             .talk-title {
                 font-style: italic;
@@ -323,6 +325,13 @@ footer {
         p {
             margin: 0;
         }
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    img.abstract {
+        filter: invert(90%) hue-rotate(210deg) saturate(102.33%) brightness(100.78%);
     }
 }
 
