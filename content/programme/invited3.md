@@ -1,8 +1,8 @@
 +++
 title = "Invited talk"
-date = "2023-09-14T15:30:00"
+date = "2023-09-14T15:20:00"
 [extra]
-enddate = "2023-09-14T16:10:00"
+enddate = "2023-09-14T16:00:00"
 kind = "invited"
 talks = ["invited-maxwell"]
 +++
