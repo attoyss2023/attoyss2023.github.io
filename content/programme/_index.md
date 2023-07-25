@@ -103,7 +103,7 @@ beforehand. This should give the opportunity to formulate targeted
 questions and to focus on the details of the presented work.
 
 ## Contributed Talks
-We have also reserved 16 time slots of 20min duration each to
+We have also reserved 10 time slots of 20min duration each to
 contributed talks where young researchers get the opportunity to
 present and discuss their most recent work before an expert audience.
 
