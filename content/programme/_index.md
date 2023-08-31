@@ -116,3 +116,4 @@ beginning of the symposium and can be left hanging during the entire
 duration of the symposium, so that participants can initiate and
 continue discussions also during the coffee breaks.
 
+[Poster abstracts](/programme/posters)
