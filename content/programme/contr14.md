@@ -1,7 +1,8 @@
 +++
 title = "Contributed talk"
-date = "2023-09-15T15:20:00"
+date = "2023-09-15T11:50:00"
 [extra]
-enddate = "2023-09-15T15:40:00"
+enddate = "2023-09-15T12:10:00"
 kind = "contributed"
+talks = ["contr-utrio"]
 +++

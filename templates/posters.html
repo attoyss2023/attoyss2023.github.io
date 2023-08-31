@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %} – Poster Abstracs{% endblock title %}
+
+{% block content %}
+<h1>Poster Abstracts</h1>
+<ul>
+  {% for presenter in section.toc %}
+  {% set poster_name = presenter.children[0].title %}
+  <li>
+    <a href={{"#" ~ poster_name }}>{{ presenter.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% for presenter in section.toc %}
+{% set poster_name = presenter.children[0].title %}
+<h2 id={{ poster_name }}>{{ presenter.title }}</h2>
+{% set image_path = "programme/posters/"~poster_name~".png" %}
+{% set image_meta = get_image_metadata(path=image_path, allow_missing=true) %}
+{% if image_meta %}
+<br/>
+<a href={{ get_url(path="programme/posters/"~poster_name~".pdf") }}>
+  <img class="abstract" src={{ get_url(path=image_path) }} alt="{{ "Click here to download the abstract for the poster of " ~ presenter.title ~ " as a PDF" }}" />
+</a>
+{% endif %}
+{% endfor %}
+{% endblock content %}

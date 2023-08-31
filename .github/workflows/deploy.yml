@@ -69,10 +69,15 @@ jobs:
         # https://stackoverflow.com/a/53699200
         run: |
           sudo sed -i 's:<policy domain="resource" name="disk" value="1GiB"/>:<policy domain="resource" name="disk" value="8GiB"/>:' /etc/ImageMagick-6/policy.xml
-      - name: Generate abstract thumbnails
+      - name: Generate talk abstract thumbnails
         run: |
           if test -d "static/programme/talks"; then
             cd static/programme/talks && ../make-previews.sh
+          fi
+      - name: Generate poster abstract thumbnails
+        run: |
+          if test -d "static/programme/posters"; then
+            cd static/programme/posters && ../make-previews.sh
           fi
       - name: Build abstract templates
         run: cd abstract-templates/LaTeX && make
